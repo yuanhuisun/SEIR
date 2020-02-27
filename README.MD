@@ -18,21 +18,17 @@
 
 假设一个地区总人数为N，I个感染者如不隔离，每人每天会碰到r个人，以概率$\beta$传染这r个人；潜伏者E会有概率$\alpha$成为感染者；同时感染者因治疗或免疫有$\gamma$的概率成为康复者R，可以建立如下方程组:  
 
-Math
-				
-					
-				
-				
-						
-				
-			
-				$$
-					
-				
-				
-				xxxxxxxxxx \left\{ \begin{array}{c}\frac{dS}{dt}=-\frac{r \beta I S}{N} \\\frac{dE}{dt}=\frac{r \beta I S}{N}-aE \\\frac{dI}{dt}=aE-\gamma I \\\frac{dR}{dt}=\gamma I \\N = S+E+I+R\end{array}\right.
-				$$
-
+$$
+\left\{ 
+\begin{array}{c}
+\frac{dS}{dt}=-\frac{r \beta I S}{N} \\
+\frac{dE}{dt}=\frac{r \beta I S}{N}-aE \\
+\frac{dI}{dt}=aE-\gamma I \\
+\frac{dR}{dt}=\gamma I \\
+N = S+E+I+R
+\end{array}
+\right.
+$$
 
 上述方程组没有解析解，但是可以利用计算机软件得到其数值解。	
 
